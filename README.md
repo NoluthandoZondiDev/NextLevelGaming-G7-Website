@@ -10,7 +10,7 @@ Experiences (R750). The website mirrors the functionality of our
 mobile app.
 
 ## Team and contributions
-Group 7: Nolu (team leader), Tamia, David, Buhle, Oratile.
+Group 7: Nolu (Team Leader), Tamia, David, Buhle, Oratile.
 
 **Website (this repo):** This section outlines the team members responsible for creating each page of the Next Level Gaming & Esports Arena website pages
 

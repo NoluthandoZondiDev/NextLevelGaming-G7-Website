@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!--
+  Next Level Gaming & Esports Arena - Group 7 (XHAW5112 POE Part 2)
+  Page: Calculate Fees (calculator.html)
+  Plain HTML only (no CSS / JavaScript yet) as required for Part 2.
+-->
+<html lang="en">
+<head>
+  <!-- Character set so symbols such as the menu icon and the Rand sign display correctly -->
+  <meta charset="UTF-8">
+  <!-- Makes the page scale properly on mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Text shown on the browser tab -->
+  <title>Next Level Gaming - Calculate Fees</title>
+</head>
+<body>
+
+  <!-- ===== HEADER: logo, business name and navigation bar (same on every page) ===== -->
+  <header>
+
+    <!-- Logo links back to the Home page -->
+    <a href="index.html">
+      <img src="images/logo.png" alt="Next Level Gaming and Esports Arena logo" width="150">
+    </a>
+
+    <!-- Business name -->
+    <p><strong>NEXT LEVEL</strong> - GAMING AND ESPORTS ARENA</p>
+
+    <!-- Navigation bar: plain links in a row (NOT a list, as the rubric requires).
+         The same bar appears on every page so visitors can always move around. -->
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Us</a> |
+      <a href="overview.html">Overview</a> |
+      <a href="calculator.html">Calculate Fees</a> |
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+  </header>
+
+  <hr>
+
+  <!-- ===== MAIN CONTENT: unique to this page ===== -->
+  <main>
+    <!-- Back link to the Home page -->
+    <p><a href="index.html">&larr; Back to Home</a></p>
+
+    <!-- Page heading -->
+    <p>QUOTE REQUEST</p>
+    <h1>Calculate Fees</h1>
+    <p>Select one or more options. VAT is at 15%.</p>
+
+    <!-- Quote form. Validation is done with HTML attributes only (no JavaScript yet). -->
+    <form action="calculator.html#cost-summary" method="get">
+      <!-- When the form is valid, Calculate Total reloads this page and jumps down to the Cost Summary.
+           (The real calculation is added in the next task with JavaScript.) -->
+
+      <!-- Full name: required, letters/spaces only (data-type check) -->
+      <p>
+        <label for="fullname">FULL NAME</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter Your Full Name"
+               required minlength="2" maxlength="60"
+               pattern="[A-Za-z][A-Za-z '\-]+" title="Letters, spaces, hyphens and apostrophes only">
+      </p>
+
+      <!-- Phone number: required, digits/+/spaces only, 10-15 characters -->
+      <p>
+        <label for="phone">PHONE NUMBER</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone Number"
+               required pattern="[0-9+ ]{10,15}" title="Digits only (may start with +), 10 to 15 characters">
+      </p>
+
+      <!-- Email: the browser checks the email format -->
+      <p>
+        <label for="email">EMAIL ADDRESS</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+      </p>
+
+      <!-- Drop-down list: number of bookings (matches the discount tiers) -->
+      <p>
+        <label for="bookings">NUMBER OF BOOKINGS</label><br>
+        <select id="bookings" name="bookings" required>
+          <option value="">-- Select --</option>
+          <option value="1">1 booking</option>
+          <option value="2">2 bookings</option>
+          <option value="3">3 bookings</option>
+          <option value="4">More than 3</option>
+        </select>
+      </p>
+
+      <!-- Table of packages with a checkbox on each row -->
+      <h2>SELECT OPTIONS</h2>
+      <table border="1">
+        <caption>Packages and experiences</caption>
+        <thead>
+          <tr>
+            <th scope="col">ITEM</th>
+            <th scope="col">PRICE</th>
+            <th scope="col">SELECT</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Ultimate Gamer Pass</td>
+          <td>R1500</td>
+          <td><input type="checkbox" name="package" value="Ultimate Gamer Pass" aria-label="Select Ultimate Gamer Pass"></td>
+        </tr>
+        <tr>
+          <td>VIP Gaming Experience</td>
+          <td>R1500</td>
+          <td><input type="checkbox" name="package" value="VIP Gaming Experience" aria-label="Select VIP Gaming Experience"></td>
+        </tr>
+        <tr>
+          <td>Esports Training Package</td>
+          <td>R1500</td>
+          <td><input type="checkbox" name="package" value="Esports Training Package" aria-label="Select Esports Training Package"></td>
+        </tr>
+        <tr>
+          <td>Birthday Party Package</td>
+          <td>R1500</td>
+          <td><input type="checkbox" name="package" value="Birthday Party Package" aria-label="Select Birthday Party Package"></td>
+        </tr>
+        <tr>
+          <td>Virtual Reality Experience</td>
+          <td>R750</td>
+          <td><input type="checkbox" name="package" value="Virtual Reality Experience" aria-label="Select Virtual Reality Experience"></td>
+        </tr>
+        <tr>
+          <td>Racing Simulator Challenge</td>
+          <td>R750</td>
+          <td><input type="checkbox" name="package" value="Racing Simulator Challenge" aria-label="Select Racing Simulator Challenge"></td>
+        </tr>
+        <tr>
+          <td>Escape Room Challenge</td>
+          <td>R750</td>
+          <td><input type="checkbox" name="package" value="Escape Room Challenge" aria-label="Select Escape Room Challenge"></td>
+        </tr>
+        </tbody>
+      </table>
+
+      <!-- Button only for now; the calculation code comes in the next task -->
+      <p><button type="submit">CALCULATE TOTAL</button></p>
+
+    </form>
+
+    <!-- Cost summary: Calculate Total jumps here (id="cost-summary") -->
+    <section id="cost-summary">
+      <h2>Cost Summary</h2>
+      <p>Your total is worked out in this order: add the selected items, take off the bulk discount, then add 15% VAT.</p>
+
+      <table border="1">
+        <caption>Your quote</caption>
+        <thead>
+          <tr>
+            <th scope="col">Description</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Subtotal (selected items)</td><td>R0.00</td></tr>
+          <tr><td>Bulk discount</td><td>- R0.00</td></tr>
+          <tr><td>Amount after discount</td><td>R0.00</td></tr>
+          <tr><td>VAT (15%)</td><td>R0.00</td></tr>
+          <tr><td><strong>TOTAL</strong></td><td><strong>R0.00</strong></td></tr>
+        </tbody>
+      </table>
+
+      <!-- Worked example so the marker can see how the amounts will be calculated -->
+      <h3>Example</h3>
+      <p>Ultimate Gamer Pass (R1500) + Virtual Reality Experience (R750) = 2 bookings</p>
+      <table border="1">
+        <caption>Worked example for 2 bookings</caption>
+        <thead>
+          <tr>
+            <th scope="col">Description</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Subtotal (R1500 + R750)</td><td>R2250.00</td></tr>
+          <tr><td>Bulk discount (2 bookings = 5%)</td><td>- R112.50</td></tr>
+          <tr><td>Amount after discount</td><td>R2137.50</td></tr>
+          <tr><td>VAT (15%)</td><td>R320.63</td></tr>
+          <tr><td><strong>TOTAL</strong></td><td><strong>R2458.13</strong></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Discount rules table -->
+    <section>
+      <h2>Discount Rules</h2>
+      <table border="1">
+        <caption>Bulk booking discounts</caption>
+        <thead>
+          <tr>
+            <th scope="col">Bookings</th>
+            <th scope="col">Discount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>0%</td></tr>
+          <tr><td>2</td><td>5%</td></tr>
+          <tr><td>3</td><td>10%</td></tr>
+          <tr><td>4 or more</td><td>15%</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <hr>
+
+  <!-- ===== FOOTER: same on every page ===== -->
+  <footer>
+    <p>Email: <a href="mailto:hello@nextlevel.co.za">hello@nextlevel.co.za</a> | Phone: +27 12 345 6789</p>
+    <p>&copy; 2026 Next Level Gaming &amp; Esports Arena</p>
+  </footer>
+
+</body>
+</html>

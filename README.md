@@ -3,13 +3,13 @@
 XHAW5112 POE Part 2: Plain HTML website (no CSS or JavaScript as yet).
 The styled version will be available after completing Task 3.
 
-## About the project
+## About the Project
 Website for Next Level Gaming & Esports Arena, a gaming venue in
 Johannesburg offering Gaming Packages (R1500) and Individual
 Experiences (R750). The website mirrors the functionality of our
 mobile app.
 
-## Team and contributions
+## Team and Contributions
 Group 7: Noluthando (Team Leader), Tamia, David, Buhle, Oratile.
 
 **Website (this repo):** This section outlines the team members responsible for creating each page of the Next Level Gaming & Esports Arena website pages

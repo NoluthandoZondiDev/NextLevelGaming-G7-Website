@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+  Next Level Gaming & Esports Arena - Group 7 (XHAW5112 POE Part 2)
+  Page: Contact Us (contact.html)
+  Plain HTML only (no CSS / JavaScript yet) as required for Part 2.
+-->
+<html lang="en">
+<head>
+  <!-- Character set so symbols such as the menu icon and the Rand sign display correctly -->
+  <meta charset="UTF-8">
+  <!-- Makes the page scale properly on mobile screens -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Text shown on the browser tab -->
+  <title>Next Level Gaming - Contact Us</title>
+</head>
+<body>
+
+  <!-- ===== HEADER: logo, business name and navigation bar (same on every page) ===== -->
+  <header>
+
+    <!-- Logo links back to the Home page -->
+    <a href="index.html">
+      <img src="images/logo.png" alt="Next Level Gaming and Esports Arena logo" width="150">
+    </a>
+
+    <!-- Business name -->
+    <p><strong>NEXT LEVEL</strong> - GAMING AND ESPORTS ARENA</p>
+
+    <!-- Navigation bar: plain links in a row (NOT a list, as the rubric requires).
+         The same bar appears on every page so visitors can always move around. -->
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Us</a> |
+      <a href="overview.html">Overview</a> |
+      <a href="calculator.html">Calculate Fees</a> |
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+  </header>
+
+  <hr>
+
+  <!-- ===== MAIN CONTENT: unique to this page ===== -->
+  <main>
+    <!-- Back link to the Home page -->
+    <p><a href="index.html">&larr; Back to Home</a></p>
+
+    <!-- Page heading -->
+    <p>CONTACT</p>
+    <h1>Contact Us</h1>
+    <p>Speak to our team or get directions.</p>
+
+    <!-- Venue information -->
+    <section>
+      <h2>Venue Information</h2>
+      <p><strong>Phone:</strong> <a href="tel:+27123456789">+27 12 345 6789</a></p>
+      <p><strong>Email:</strong> <a href="mailto:hello@nextlevel.co.za">hello@nextlevel.co.za</a></p>
+      <p><strong>Address:</strong> The Zone @ Rosebank, 177 Oxford Road, Rosebank, Johannesburg, 2196</p>
+    </section>
+
+    <!-- Social media links (placeholders that open each platform) -->
+    <section>
+      <h2>Follow Us</h2>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> |
+      <a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a> |
+      <a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+    </section>
+
+    <!-- Contact form. Validation attributes handle required fields and the email format.
+         Send opens the visitor's email app with the message addressed to hello@nextlevel.co.za. -->
+    <section>
+      <h2>Contact Form</h2>
+      <form action="mailto:hello@nextlevel.co.za" method="post" enctype="text/plain">
+        <p>
+          <label for="cname">Name</label><br>
+          <input type="text" id="cname" name="cname" required minlength="2" maxlength="60"
+                 pattern="[A-Za-z][A-Za-z '\-]+" title="Letters, spaces, hyphens and apostrophes only">
+        </p>
+        <p>
+          <label for="cemail">Email</label><br>
+          <input type="email" id="cemail" name="cemail" required>
+        </p>
+        <p>
+          <label for="cmessage">Message</label><br>
+          <textarea id="cmessage" name="cmessage" rows="5" cols="40" required minlength="10"></textarea>
+        </p>
+        <p><button type="submit">SEND</button></p>
+        <p><small>Pressing Send opens your email app with your message ready to send to hello@nextlevel.co.za.</small></p>
+      </form>
+    </section>
+
+    <!-- Map: embedded OpenStreetMap with a marker on The Zone @ Rosebank, Johannesburg -->
+    <section>
+      <h2>Map - Directions to Venue</h2>
+      <iframe title="Map showing The Zone at Rosebank, 177 Oxford Road, Johannesburg"
+              width="500" height="300"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=28.0350%2C-26.1520%2C28.0520%2C-26.1390&amp;layer=mapnik&amp;marker=-26.1455%2C28.0437"></iframe>
+      <p><a href="https://www.google.com/maps/search/?api=1&amp;query=177+Oxford+Road+Rosebank+Johannesburg" target="_blank" rel="noopener">OPEN MAP</a></p>
+    </section>
+  </main>
+
+  <hr>
+
+  <!-- ===== FOOTER: same on every page ===== -->
+  <footer>
+    <p>Email: <a href="mailto:hello@nextlevel.co.za">hello@nextlevel.co.za</a> | Phone: +27 12 345 6789</p>
+    <p>&copy; 2026 Next Level Gaming &amp; Esports Arena</p>
+  </footer>
+
+</body>
+</html>

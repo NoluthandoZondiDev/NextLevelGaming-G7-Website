@@ -10,7 +10,7 @@ Experiences (R750). The website mirrors the functionality of our
 mobile app.
 
 ## Team and contributions
-Group 7: Nolu (team leader), Tamia, Dave, Buhle, Oratile.
+Group 7: Nolu (team leader), Tamia, David, Buhle, Oratile.
 
 **Website (this repo):** This section outlines the team members responsible for creating each page of the Next Level Gaming & Esports Arena website pages
 
@@ -55,7 +55,7 @@ Contact Page
 | Member | Screens |
 |---|---|
 | Tamia | Splash, Home, About Us |
-| Dave | Overview, Ultimate Gamer Pass, VIP Gaming Experience |
+| David | Overview, Ultimate Gamer Pass, VIP Gaming Experience |
 | Buhle | Esports Training, Birthday Party |
 | Nolu | Virtual Reality, Racing Simulator, Escape Room |
 | Oratile | Calculate Fees, Contact Us |

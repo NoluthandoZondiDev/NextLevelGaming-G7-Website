@@ -1,7 +1,7 @@
 # Next Level Gaming & Esports Arena - Website (Group 7)
 
-XHAW5112 POE Part 2: plain HTML website (no CSS or JavaScript yet).
-The styled version comes in a later task.
+XHAW5112 POE Part 2: Plain HTML website (no CSS or JavaScript as yet).
+The styled version will be available after completing Task 3.
 
 ## About the project
 Website for Next Level Gaming & Esports Arena, a gaming venue in
@@ -10,55 +10,32 @@ Experiences (R750). The website mirrors the functionality of our
 mobile app.
 
 ## Team and contributions
-Group 7: Nolu (Team Leader), Tamia, David, Buhle, Oratile.
+Group 7: Noluthando (Team Leader), Tamia, David, Buhle, Oratile.
 
 **Website (this repo):** This section outlines the team members responsible for creating each page of the Next Level Gaming & Esports Arena website pages
 
 **Tamia**
-
-Home Page
-
-About Page
-
-Overview Page
+- Home Page
+- About Page
+- Overview Page
 
 **David**
-
-Ultimate Gamer Pass Page
-
-VIP Gaming Experience Page
-
-Esports Training Package Page
+- Ultimate Gamer Pass Page
+- VIP Gaming Experience Page
+- Esports Training Package Page
 
 **Buhle**
-
-Birthday Party Package Page
-
-Virtual Reality Experience Page
+- Birthday Party Package Page
+- Virtual Reality Experience Page
 
 **Noluthando**
-
-Racing Simulator Challenge Page
-
-Escape Room Challenge Page
-
-Individual Experience Details Page
+- Racing Simulator Challenge Page
+- Escape Room Challenge Page
+- Individual Experience Details Page
 
 **Oratile**
-
-Calculate Fees Page
-
-Contact Page
-
-**Mobile app (separate repo):** screens were split by wireframe frame.
-
-| Member | Screens |
-|---|---|
-| Tamia | Splash, Home, About Us |
-| David | Overview, Ultimate Gamer Pass, VIP Gaming Experience |
-| Buhle | Esports Training, Birthday Party |
-| Nolu | Virtual Reality, Racing Simulator, Escape Room |
-| Oratile | Calculate Fees, Contact Us |
+- Calculate Fees Page
+- Contact Page
 
 ## Pages
 | Page | File |
@@ -86,9 +63,6 @@ Contact Page
 
 ## How to view
 Open `index.html` in a browser, or use the VS Code Live Server extension.
-
-## Links
-- Mobile app repo: [add link]
 
 ## Image credits
 [add the photo sources once Tamia confirms them]

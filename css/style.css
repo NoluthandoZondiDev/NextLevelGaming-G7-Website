@@ -155,6 +155,15 @@ nav a[aria-current="page"] {
   color: var(--cyan);
   border-color: var(--cyan);
 }
+/* Hide the leftover <hr> that sits right under the header */
+header + hr { display: none; }
+
+header p {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
 
 /* 4. DROPDOWN NAV (built from plain links, no <ul>/<li>) -------------------
    <div class="dropdown">

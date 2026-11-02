@@ -13,6 +13,7 @@
   <!-- Text shown on the browser tab -->
   <title>Next Level Gaming - Virtual Reality Experience</title>
   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/experience.css">
 </head>
 <body>
 
@@ -42,43 +43,52 @@
   <hr>
 
   <!-- ===== MAIN CONTENT: unique to this page ===== -->
-  <main>
+    <main>
 
-    <!-- Back link to the overview list -->
-    <p><a href="overview.html">&larr; Back to Overview</a></p>
+    <!-- Back link to the overview list (ghost button = no border, underline on hover) -->
+    <p><a class="btn btn-ghost" href="overview.html">&larr; Back to Overview</a></p>
 
-    <!-- Page heading -->
-    <p>EXPERIENCE DETAILS</p>
-    <p>INDIVIDUAL EXPERIENCE</p>
+    <!-- Small labels above the heading -->
+    <p class="eyebrow">EXPERIENCE DETAILS</p>
+    <p class="eyebrow">INDIVIDUAL EXPERIENCE</p>
     <h1>Virtual Reality Experience</h1>
 
-    <!-- Price -->
-    <p class="price"><strong>R750</strong></p>
+    <!-- Two columns on desktop: photo on the left, details card on the right -->
+    <div class="experience-layout">
 
-    <!-- Package photo -->
-    <img src="images/virtual-reality.jpg" alt="Person wearing a virtual reality headset in a driving seat" width="500">
+      <!-- Experience photo -->
+      <img src="images/virtual-reality.jpg" alt="Person wearing a virtual reality headset in a driving seat" width="500">
 
-    <!-- Short description -->
-    <p>Explore immersive virtual reality games.</p>
+      <div class="experience-info">
 
-    <!-- What the customer gets -->
-    <h2>Included:</h2>
-    <ul>
-      <li>VR Headset</li>
-      <li>Choice of Games</li>
-      <li>Staff Assistance</li>
-    </ul>
+        <!-- Price -->
+        <p class="price"><strong>R750</strong></p>
 
-    <!-- Sends the user to the Calculate Fees page -->
-    <p><a class="button" href="calculator.html">ADD TO CALCULATOR</a></p>
+        <!-- Short description -->
+        <p>Explore immersive virtual reality games.</p>
 
-    <!-- Related experiences (links to three other pages) -->
+        <!-- What the customer gets -->
+        <h2>Included:</h2>
+        <ul>
+          <li>VR Headset</li>
+          <li>Choice of Games</li>
+          <li>Staff Assistance</li>
+        </ul>
+
+        <!-- Booking button: primary = neon green border (green is for booking buttons only) -->
+        <p><a class="btn btn-primary" href="calculator.html">ADD TO CALCULATOR</a></p>
+
+      </div>
+    </div>
+
+    <!-- Related experiences (links to three other pages), shown as secondary buttons -->
     <h2>Related Experiences</h2>
-    <ul>
-      <li><a href="racing-simulator.html">Racing Simulator Challenge</a></li>
-      <li><a href="escape-room.html">Escape Room Challenge</a></li>
-      <li><a href="ultimate-gamer-pass.html">Ultimate Gamer Pass</a></li>
-    </ul>
+    <div class="related">
+      <a class="btn btn-secondary" href="racing-simulator.html">Racing Simulator Challenge</a>
+      <a class="btn btn-secondary" href="escape-room.html">Escape Room Challenge</a>
+      <a class="btn btn-secondary" href="ultimate-gamer-pass.html">Ultimate Gamer Pass</a>
+    </div>
+
   </main>
 
   <hr>

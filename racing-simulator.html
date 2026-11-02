@@ -13,6 +13,7 @@
   <!-- Text shown on the browser tab -->
   <title>Next Level Gaming - Racing Simulator Challenge</title>
   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/experience.css">
 </head>
 <body>
 
@@ -42,43 +43,44 @@
   <hr>
 
   <!-- ===== MAIN CONTENT: unique to this page ===== -->
-  <main>
+    <main class="experience-page">
 
-    <!-- Back link to the overview list -->
-    <p><a href="overview.html">&larr; Back to Overview</a></p>
+    <!-- Back link (ghost button = no border, underline on hover) -->
+    <p><a class="btn btn-ghost" href="overview.html">&larr; Back to Overview</a></p>
 
-    <!-- Page heading -->
-    <p>EXPERIENCE DETAILS</p>
-    <p>INDIVIDUAL EXPERIENCE</p>
+    <!-- Labels and heading (same order as the Figma frame and the app) -->
+    <p class="page-label">EXPERIENCE DETAILS</p>
+    <p class="eyebrow">INDIVIDUAL EXPERIENCE</p>
     <h1>Racing Simulator Challenge</h1>
 
     <!-- Price -->
     <p class="price"><strong>R750</strong></p>
 
-    <!-- Package photo -->
-    <img src="images/racing-simulator.jpg" alt="Person driving a racing simulator with a curved screen" width="500">
+    <!-- Experience photo -->
+    <img src="images/racing-simulator.jpg" alt="Hands on a steering wheel in a racing simulator with curved monitors" width="500">
 
     <!-- Short description -->
-    <p>Race on professional driving simulators.</p>
+    <p class="description">Race on professional driving simulators.</p>
 
     <!-- What the customer gets -->
     <h2>Included:</h2>
-    <ul>
+    <ul class="included">
       <li>Racing Simulator</li>
       <li>Choice of Tracks</li>
       <li>Leaderboard Competition</li>
     </ul>
 
-    <!-- Sends the user to the Calculate Fees page -->
-    <p><a class="button" href="calculator.html">ADD TO CALCULATOR</a></p>
+    <!-- Booking button: sends the user to the Calculate Fees page -->
+    <p class="cta"><a class="btn btn-primary" href="calculator.html">ADD TO CALCULATOR</a></p>
 
     <!-- Related experiences (links to three other pages) -->
     <h2>Related Experiences</h2>
-    <ul>
-      <li><a href="escape-room.html">Escape Room Challenge</a></li>
-      <li><a href="ultimate-gamer-pass.html">Ultimate Gamer Pass</a></li>
-      <li><a href="vip-gaming.html">VIP Gaming Experience</a></li>
-    </ul>
+    <div class="related">
+      <a class="btn btn-secondary" href="virtual-reality-experience.html">Virtual Reality Experience</a>
+      <a class="btn btn-secondary" href="escape-room.html">Escape Room Challenge</a>
+      <a class="btn btn-secondary" href="ultimate-gamer-pass.html">Ultimate Gamer Pass</a>
+    </div>
+
   </main>
 
   <hr>

@@ -21,21 +21,22 @@
 
 /* 1. DESIGN TOKENS ------------------------------------------------------- */
 :root {
-  --bg: #0D0D14;            /* base background */
-  --surface: #151522;       /* cards, tables, forms */
-  --surface-2: #1C1C2E;     /* header, hover surfaces */
-  --text: #E9E9F2;
-  --text-muted: #A3A3BC;
-  --border: #2B2B42;
+  --bg: #0E1128;            /* base background (dark navy like the wireframes) */
+  --surface: #1A2048;       /* cards, tables, forms */
+  --surface-2: #262F63;     /* header, hover surfaces */
+  --text: #FFFFFF;
+  --text-muted: #B4BBE0;
+  --border: #2E3A78;
 
-  --cyan: #00E5FF;          /* nav hover, input focus, secondary buttons */
-  --magenta: #FF2E9F;       /* card hover */
-  --green: #39FF14;         /* booking / CTA buttons ONLY */
+  --cyan: #00CED2;          /* light blue: nav hover, input focus, secondary buttons */
+  --magenta: #FF39B5;       /* pink: card hover */
+  --green: #48F522;         /* booking / CTA buttons ONLY */
+  --violet: #A95EFF;        /* purple: experience names */
+  --blue: #0093FF;          /* dark blue: outlines and accents */
   --error: #FF5C7A;
 
-  --font-heading: "Orbitron", "Segoe UI", Arial, sans-serif;
-  --font-body: "Inter", "Segoe UI", Arial, sans-serif;
-
+   --font-heading: Arial, Helvetica, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
   --radius: 10px;
   --radius-sm: 6px;
   --max-width: 1100px;
@@ -87,7 +88,7 @@ a {
   text-underline-offset: 3px;
   transition: color 0.2s, text-shadow 0.2s;
 }
-a:hover { text-shadow: 0 0 8px rgba(0, 229, 255, 0.6); }
+a:hover { text-shadow: 0 0 8px rgba(0, 206, 210, 0.6); }
 
 img {
   max-width: 100%;
@@ -107,7 +108,7 @@ hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
 
 /* 3. HEADER & NAVIGATION (plain links, NOT a list) ------------------------ */
 header {
-  background: var(--surface-2);
+  background: var(--bg);
   border-bottom: 1px solid var(--border);
   padding: 0.75rem 1.25rem;
   display: flex;
@@ -146,7 +147,7 @@ nav a:hover,
 nav a:focus-visible {
   color: var(--cyan);
   border-color: var(--cyan);
-  box-shadow: 0 0 10px rgba(0, 229, 255, 0.35);
+  box-shadow: 0 0 10px rgba(0, 206, 210, 0.35);
   text-shadow: none;
 }
 /* Add class="active" (or aria-current="page") to the link of the current page */
@@ -184,7 +185,7 @@ header p {
   background: var(--surface-2);
   border: 1px solid var(--cyan);
   border-radius: var(--radius);
-  box-shadow: 0 0 14px rgba(0, 229, 255, 0.25);
+  box-shadow: 0 0 14px rgba(0, 206, 210, 0.25);
   flex-direction: column;
   gap: 0.25rem;
 }
@@ -214,7 +215,7 @@ main article {
 .card:hover,
 main article:hover {
   border-color: var(--magenta);
-  box-shadow: 0 0 14px rgba(255, 46, 159, 0.35);
+  box-shadow: 0 0 14px rgba(255, 57, 181, 0.35);
 }
 .card img, main article img { margin-bottom: 1rem; width: 100%; object-fit: cover; }
 .card h2, .card h3, main article h2, main article h3 { margin-top: 0; }
@@ -267,7 +268,7 @@ input[type="reset"] {
 .btn:hover, button:hover,
 input[type="submit"]:hover, input[type="reset"]:hover {
   color: var(--cyan);
-  box-shadow: 0 0 14px rgba(0, 229, 255, 0.6);
+  box-shadow: 0 0 14px rgba(0, 206, 210, 0.6);
   text-shadow: none;
 }
 
@@ -298,7 +299,7 @@ table {
   border-collapse: collapse;
   margin: 1.25rem 0;
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid var(--blue);
   border-radius: var(--radius);
   overflow: hidden;
 }
@@ -368,7 +369,7 @@ textarea { min-height: 8rem; resize: vertical; }
 input:focus, select:focus, textarea:focus {
   outline: none;
   border-color: var(--cyan);
-  box-shadow: 0 0 10px rgba(0, 229, 255, 0.45);
+  box-shadow: 0 0 10px rgba(0, 206, 210, 0.45);
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -412,7 +413,7 @@ input.invalid, select.invalid, textarea.invalid {
   border: 1px solid var(--cyan);
   border-radius: var(--radius);
   padding: 1.25rem;
-  box-shadow: 0 0 14px rgba(0, 229, 255, 0.2);
+  box-shadow: 0 0 14px rgba(0, 206, 210, 0.2);
 }
 
 /* 9. DETAILS / FAQ --------------------------------------------------------- */

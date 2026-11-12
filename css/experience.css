@@ -3,9 +3,6 @@
    Loaded AFTER css/style.css. Matches Figma frames 9-11 and the app screens.
    ========================================================================== */
 
-/* Violet from the logo gradient, used for the experience name */
-:root { --violet: #A855F7; }
-
 /* Single centred column, like the app screens */
 .experience-page { max-width: 760px; }
 

@@ -29,13 +29,19 @@
 
     <!-- Navigation bar: plain links in a row (NOT a list, as the rubric requires).
          The same bar appears on every page so visitors can always move around. -->
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="overview.html">Overview</a>
-      <a href="calculator.html">Calculate Fees</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+   <button class="menu-toggle" id="menuToggle"
+        aria-expanded="false"
+        aria-controls="mainNavigation">
+  ☰ Menu
+</button>
+
+<nav id="mainNavigation" class="navigation-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="overview.html">Overview</a>
+  <a href="calculator.html">Calculate Fees</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
 
   </header>
 
@@ -171,14 +177,29 @@
     </section>
 
         <!-- ===== Gallery (uses images already in the images folder) ===== -->
-    <section>
-      <h2>Gallery</h2>
-      <p>A look at what's waiting for you at Next Level.</p>
-      <img src="images/virtual-reality.jpg" alt="Player wearing a virtual reality headset" width="300">
-      <img src="images/racing-simulator.jpg" alt="Racing simulator seat with steering wheel and screens" width="300">
-      <img src="images/escape-room.jpg" alt="Escape room challenge set" width="300">
-      <img src="images/birthday-party.jpg" alt="Birthday party gaming setup" width="300">
-    </section>
+    <section id="imageGallery">
+
+    <h2>Gallery</h2>
+
+    <p>A look at what's waiting for you at Next Level.</p>
+
+    <img src="images/virtual-reality.jpg"
+         alt="Player wearing a virtual reality headset"
+         width="300">
+
+    <img src="images/racing-simulator.jpg"
+         alt="Racing simulator seat with steering wheel and screens"
+         width="300">
+
+    <img src="images/escape-room.jpg"
+         alt="Escape room challenge set"
+         width="300">
+
+    <img src="images/birthday-party.jpg"
+         alt="Birthday party gaming setup"
+         width="300">
+
+</section>
 
     <!-- ===== FAQ: each question expands to show its answer ===== -->
     <section>
@@ -231,5 +252,7 @@
     <p>&copy; 2026 Next Level Gaming &amp; Esports Arena</p>
   </footer>
 
+  <script src="js/script.js"></script>
+  
 </body>
 </html>

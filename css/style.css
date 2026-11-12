@@ -477,3 +477,115 @@ footer p { margin: 0.25rem auto; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Dropdown menu button */
+.menu-toggle {
+    display: block;
+    padding: 10px 18px;
+    background-color: #39FF14;
+    color: #0F1225;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Navigation menu is hidden initially */
+.navigation-menu {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+    background-color: #171D3D;
+    border-radius: 8px;
+}
+
+/* Display the menu when JavaScript adds this class */
+.navigation-menu.show-menu {
+    display: flex;
+}
+
+/* Navigation links */
+.navigation-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+/* Highlight links when the user hovers */
+.navigation-menu a:hover {
+    color: #39FF14;
+}
+
+#welcomeMessage {
+    color: #39FF14;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+/* Overview search section */
+.search-section {
+    margin: 25px auto;
+    text-align: center;
+}
+
+#experienceSearch {
+    width: 80%;
+    max-width: 450px;
+    padding: 12px;
+    margin-top: 10px;
+    border: 2px solid #39FF14;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Error message */
+.error-message {
+    color: #FF2B2B;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Enlarged image popup */
+.image-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Display the popup */
+.image-popup.show-popup {
+    display: flex;
+}
+
+/* Enlarged image */
+.image-popup img {
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+    border: 3px solid #39FF14;
+    border-radius: 8px;
+}
+
+/* Close button */
+.close-popup {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

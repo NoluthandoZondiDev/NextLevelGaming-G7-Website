@@ -30,7 +30,14 @@
 
     <!-- Navigation bar: plain links in a row (NOT a list, as the rubric requires).
          The same bar appears on every page so visitors can always move around. -->
-    <nav>
+
+    <button class="menu-toggle" id="menuToggle"
+        aria-expanded="false"
+        aria-controls="mainNavigation">
+       ☰ Menu
+    </button>
+    
+    <nav id="mainNavigation" class="navigation-menu">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="overview.html">Overview</a>
@@ -91,5 +98,10 @@
     <p>&copy; 2026 Next Level Gaming &amp; Esports Arena</p>
   </footer>
 
+
+  <!--Javascript-->
+
+  <script src="/js/script.js"></script>
+  
 </body>
 </html>

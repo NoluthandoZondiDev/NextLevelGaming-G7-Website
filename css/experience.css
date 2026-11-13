@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Experience detail pages (Virtual Reality, Racing Simulator, Escape Room)
+   Loaded AFTER css/style.css. Matches Figma frames 9-11 and the app screens.
+   ========================================================================== */
+
+/* Single centred column, like the app screens */
+.experience-page { max-width: 760px; }
+
+/* Big white "EXPERIENCE DETAILS" */
+.page-label {
+  font-family: var(--font-heading);
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text);
+  margin: 1rem 0 0.25rem;
+}
+
+/* Small cyan "INDIVIDUAL EXPERIENCE" */
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin: 0 0 0.5rem;
+}
+
+/* Violet experience name */
+.experience-page h1 {
+  color: var(--violet);
+  font-size: clamp(1.3rem, 3.2vw, 1.9rem);
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+}
+
+/* Green price */
+.experience-page .price {
+  color: var(--green);
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+}
+
+/* Wide photo */
+.experience-page img {
+  width: 100%;
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Centred short description */
+.description { text-align: center; margin: 0 auto 1rem; }
+
+.experience-page h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 1.5rem 0 0.5rem;
+}
+
+/* "Included" list with green + signs instead of dots */
+.included { list-style: none; padding: 0; margin: 0 0 1.5rem; }
+.included li::before { content: "+ "; color: var(--green); font-weight: 700; }
+
+/* Centred Add to Calculator button */
+.cta { text-align: center; margin: 1.5rem 0 2.5rem; }
+
+/* Line the Back link up with the headings (ghost buttons have side padding) */
+.experience-page .btn-ghost { padding-left: 0; }
+
+/* Hide the extra line above the footer on these pages */
+.experience-page + hr { display: none; }

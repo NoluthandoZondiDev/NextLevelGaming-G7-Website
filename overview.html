@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Text shown on the browser tab -->
   <title>Next Level Gaming - Overview</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -28,13 +29,20 @@
 
     <!-- Navigation bar: plain links in a row (NOT a list, as the rubric requires).
          The same bar appears on every page so visitors can always move around. -->
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="about.html">About Us</a> |
-      <a href="overview.html">Overview</a> |
-      <a href="calculator.html">Calculate Fees</a> |
-      <a href="contact.html">Contact Us</a>
-    </nav>
+
+    <button class="menu-toggle" id="menuToggle"
+        aria-expanded="false"
+        aria-controls="mainNavigation">
+  ☰ Menu
+</button>
+
+<nav id="mainNavigation" class="navigation-menu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="overview.html">Overview</a>
+  <a href="calculator.html">Calculate Fees</a>
+  <a href="contact.html">Contact Us</a>
+</nav>
 
   </header>
 
@@ -49,31 +57,50 @@
     <p>OVERVIEW</p>
     <h1>Gaming Packages</h1>
 
+    <!-- Search for packages and experiences -->
+<section class="search-section">
+
+    <h2>Find Your Gaming Experience</h2>
+
+    <label for="experienceSearch">Search packages and experiences:</label>
+
+    <input
+        type="text"
+        id="experienceSearch"
+        placeholder="Search here..."
+    >
+
+    <p id="searchError" class="error-message" role="status"></p>
+
+</section>
+
     <!-- Section 1: the four gaming packages, each linked to its own page -->
-    <section>
-      <h2>Gaming Packages</h2>
-      <section>
+    <h2>Gaming Packages</h2>
+      <section class="experience-card">
         <h3>Ultimate Gamer Pass</h3>
         <img src="images/ultimate-gamer-pass.jpg" alt="Group of friends celebrating while playing video games" width="200">
         <p>Unlimited gaming access for a full day.</p>
         <p>Price: <strong>R1 500</strong></p>
         <p><a href="ultimate-gamer-pass.html">VIEW DETAILS</a></p>
       </section>
-      <section>
+
+      <section class="experience-card">
         <h3>VIP Gaming Experience</h3>
         <img src="images/vip-gaming.jpg" alt="Row of premium gaming chairs facing large screens" width="200">
         <p>Premium gaming experience with exclusive facilities.</p>
         <p>Price: <strong>R1 500</strong></p>
         <p><a href="vip-gaming.html">VIEW DETAILS</a></p>
       </section>
-      <section>
+      
+      <section class="experience-card">
         <h3>Esports Training Package</h3>
         <img src="images/esports-training.jpg" alt="Players wearing headsets training at computers" width="200">
         <p>Improve gaming skills with professional coaching.</p>
         <p>Price: <strong>R1 500</strong></p>
         <p><a href="esports-training.html">VIEW DETAILS</a></p>
       </section>
-      <section>
+      
+      <section class="experience-card">
         <h3>Birthday Party Package</h3>
         <img src="images/birthday-party.jpg" alt="Neon-lit gaming arena set up for a party" width="200">
         <p>Host a gaming themed birthday celebration.</p>
@@ -83,7 +110,7 @@
     </section>
 
     <!-- Section 2: the three individual experiences, each linked to its own page -->
-    <section>
+    <section class="experience-card">
       <h2>Individual Experiences</h2>
       <section>
         <h3>Virtual Reality Experience</h3>
@@ -92,14 +119,15 @@
         <p>Price: <strong>R750</strong></p>
         <p><a href="virtual-reality-experience.html">VIEW DETAILS</a></p>
       </section>
-      <section>
+
+      <section class="experience-card">
         <h3>Racing Simulator Challenge</h3>
         <img src="images/racing-simulator.jpg" alt="Person driving a racing simulator with a curved screen" width="200">
         <p>Race on professional driving simulators.</p>
         <p>Price: <strong>R750</strong></p>
         <p><a href="racing-simulator.html">VIEW DETAILS</a></p>
       </section>
-      <section>
+      <section class="experience-card">
         <h3>Escape Room Challenge</h3>
         <img src="images/escape-room.jpg" alt="Laptops and a graffiti wall in a purple-lit puzzle room" width="200">
         <p>Solve puzzles & escape before time runs out.</p>
@@ -116,6 +144,8 @@
     <p>Email: <a href="mailto:hello@nextlevel.co.za">hello@nextlevel.co.za</a> | Phone: +27 12 345 6789</p>
     <p>&copy; 2026 Next Level Gaming &amp; Esports Arena</p>
   </footer>
+
+  <script src="js/script.js"></script>
 
 </body>
 </html>
